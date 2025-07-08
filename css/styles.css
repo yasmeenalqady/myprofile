@@ -1,0 +1,162 @@
+/* استيراد خط Cairo */
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/Cairo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', Tahoma, sans-serif;
+  direction: rtl;
+  font-size: 18px;
+  line-height: 1.8;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* تنسيق الصورة الشخصية */
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid orange;
+  background: #ddd url('../images/1.png') no-repeat center/cover;
+  margin: auto;
+}
+
+/* العنوان الرئيسي */
+h1 {
+  font-size: 24px;
+  color: orange;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* شريط التنقل */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: orange;
+  color: black;
+  border-radius: 5px;
+}
+
+/* تنسيق الأقسام */
+.container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.section-title {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* الصناديق اليمنى واليسرى */
+.left, .right {
+  padding: 20px;
+}
+
+.box {
+  margin-bottom: 25px;
+}
+
+.box-title {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-right: 5px solid orange;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-right: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* أشرطة اللغة */
+.lang-bar {
+  background-color: #ccc;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.lang-fill {
+  height: 100%;
+  background-color: orange;
+}
+
+/* التذييل */
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+}
