@@ -3,45 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>موقع شخصي - ياسمين علي عبده القاضي</title>
+  <title>موقع شخصي - ياسمين القاضي</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body id="top">
 
-  <!--  الترويسة -->
+  <!-- الترويسة -->
   <header>
     <nav>
-      <ul style="display: flex; list-style: none; justify-content: center; gap: 20px; padding: 20px; background-color: #1e1e1e;">
-        <li><a href="#bio" style="color: white; text-decoration: none;">السيرة</a></li>
-        <li><a href="#skills" style="color: white; text-decoration: none;">المهارات</a></li>
-        <li><a href="#portfolio" style="color: white; text-decoration: none;">الأعمال</a></li>
-        <li><a href="#contact" style="color: white; text-decoration: none;">اتصل بي</a></li>
+      <ul class="nav-list">
+        <li><a href="#bio">السيرة</a></li>
+        <li><a href="#skills">المهارات</a></li>
+        <li><a href="#portfolio">الأعمال</a></li>
+        <li><a href="#certificates">الشهادات</a></li>
+        <li><a href="#testimonials">التوصيات</a></li>
+        <li><a href="#contact">اتصل بي</a></li>
       </ul>
     </nav>
 
-    <div style="text-align: center; padding: 30px; background-color: #f4f4f4;">
+    <div class="header-content">
       <img src="images/1.png" alt="الصورة الشخصية" class="photo" />
       <h1>ياسمين علي عبده سيف القاضي</h1>
       <p class="subtitle">مهندسة برمجيات | مدربة حاسوب | باحثة أكاديمية</p>
+      <a href=" file/cv.pdf" download class="download-btn">تحميل السيرة الذاتية PDF</a>
     </div>
   </header>
 
-  <!-- القسم الرئيسي -->
+  <!-- المحتوى الرئيسي -->
   <main class="container">
 
-    <!--  السيرة -->
+    <!-- السيرة الذاتية -->
     <section id="bio" class="right">
       <div class="section-title">التعليم</div>
       <ul>
         <li>بكالوريوس هندسة برمجيات - جامعة تعز</li>
-        <li>مشروع التخرج: تصميم نظام إدارة الموارد البشرية (HR System)</li>
-        <li>معدل التخرج: 87% - جيد جداً مع مرتبة الشرف</li>
+        <li>مشروع التخرج: نظام HR باستخدام PHP</li>
+        <li>معدل: 87% - جيد جداً مع مرتبة الشرف</li>
       </ul>
 
       <div class="section-title">الخبرات المهنية</div>
       <ul>
-        <li>تدريس جامعي في البرمجة وتصميم النظم بجامعة تعز.</li>
-        <li>إشراف على مشاريع تخرج، وتطوير أنظمة باستخدام PHP وC#.</li>
+        <li>تدريس جامعي في جامعة تعز</li>
+        <li>إشراف على مشاريع تخرج</li>
+        <li>برمجة أنظمة باستخدام PHP وC#</li>
       </ul>
     </section>
 
@@ -69,23 +73,38 @@
       </div>
     </section>
 
-    <!--  الأعمال -->
+    <!-- المشاريع -->
     <section id="portfolio" class="right">
       <div class="section-title">الأعمال والمشاريع</div>
       <ul>
         <li>نظام مكتبة إلكترونية باستخدام C#</li>
-        <li>مواقع لمؤسسات تعليمية ومجتمعية</li>
-        <li>نظام إدارة محتوى CMS باستخدام PHP وMySQL</li>
+        <li>مواقع لمؤسسات تعليمية</li>
+        <li>نظام CMS باستخدام PHP وMySQL</li>
       </ul>
     </section>
+
+    <!-- الشهادات -->
+    <section id="certificates" class="right">
+      <div class="section-title">الشهادات والدورات</div>
+      <ul>
+        <li>ICDL - كلية البيان</li>
+        <li>دبلوم جرافيك - أكاديمية الإعلام العربي</li>
+        <li>PMP - مركز رؤية فكر</li>
+        <li>مشاركة في مؤتمر ICOTEN2021</li>
+      </ul>
+    </section>
+
+   
   </main>
 
-  <!-- ✅ التذييل -->
-  <footer id="contact" style="background-color: #1e1e1e; color: white; text-align: center; padding: 20px;">
+  <!-- التذييل -->
+  <footer id="contact">
     <p>Email: yasmeen@example.com | 📞 770193410</p>
-    <p> Sddress: تعز - المدينة، الجبل القديم</p>
+    <p>العنوان: تعز - المدينة، الجبل القديم</p>
     <p>© جميع الحقوق محفوظة - ياسمين القاضي 2025</p>
   </footer>
 
+  <!-- زر الرجوع للأعلى -->
+  <a href="#top" class="scroll-top-btn">↑</a>
 </body>
 </html>
