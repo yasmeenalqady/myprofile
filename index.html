@@ -1,110 +1,205 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>موقع شخصي - ياسمين القاضي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yasmeen ALI</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
-<body id="top">
+<body>
+  <header id="home">
+    
 
-  <!-- الترويسة -->
-  <header>
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#bio">السيرة</a></li>
-        <li><a href="#skills">المهارات</a></li>
-        <li><a href="#portfolio">الأعمال</a></li>
-        <li><a href="#certificates">الشهادات</a></li>
-        <li><a href="#testimonials">التوصيات</a></li>
-        <li><a href="#contact">اتصل بي</a></li>
-      </ul>
-    </nav>
+  <nav >
+  <div class="logo">Yasmeen Ali</div>
 
-    <div class="header-content">
-      <img src="images/1.png" alt="الصورة الشخصية" class="photo" />
-      <h1>ياسمين علي عبده سيف القاضي</h1>
-      <p class="subtitle">مهندسة برمجيات | مدربة حاسوب | باحثة أكاديمية</p>
-      <a href=" file/cv.pdf" download class="download-btn">تحميل السيرة الذاتية PDF</a>
+  <!-- زر الهامبرجر كـ label يتحكم في checkbox -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <ul class="nav-list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#Services">Services</a></li>
+    <li><a href="#Projects">Projects</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <section class="hero centered" >
+    <div class="hero-img">
+      <img src="image/1.png" alt="Profile Image" />
     </div>
-  </header>
+ <div class="hero-text centered-text">
+    <h3>Hello, It's Me</h3>
+    <h1>Yasmeen Alqady</h1>
+    <h2>And I'm a <span>UI/UX Designer & Frontend Developer</span></h2>
+    <!-- <p>I'm passionate about creating elegant and responsive websites that provide a great user experience.</p> -->
+   
+     <div class="socials">
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  <a href="yasmeenalqady@email.com"><i class="fas fa-envelope"></i></a>
+  <a href="#"><i class="fab fa-github"></i></a>
+</div>
 
-  <!-- المحتوى الرئيسي -->
-  <main class="container">
 
-    <!-- السيرة الذاتية -->
-    <section id="bio" class="right">
-      <div class="section-title">التعليم</div>
-      <ul>
-        <li>بكالوريوس هندسة برمجيات - جامعة تعز</li>
-        <li>مشروع التخرج: نظام HR باستخدام PHP</li>
-        <li>معدل: 87% - جيد جداً مع مرتبة الشرف</li>
-      </ul>
+     <a href="file/cv.pdf" download class="download-btn">
+  <button>Download CV</button>
+</a>
 
-      <div class="section-title">الخبرات المهنية</div>
-      <ul>
-        <li>تدريس جامعي في جامعة تعز</li>
-        <li>إشراف على مشاريع تخرج</li>
-        <li>برمجة أنظمة باستخدام PHP وC#</li>
-      </ul>
-    </section>
+    </div>
+  </section>
+</header>
 
-    <!-- المهارات -->
-    <section id="skills" class="left">
-      <div class="box">
-        <div class="box-title">المهارات</div>
-        <ul>
-          <li>PHP, C#, SQL</li>
-          <li>تصميم جرافيكي وفوتوشوب</li>
-          <li>Microsoft Word, PowerPoint</li>
-        </ul>
-      </div>
 
-      <div class="box">
-        <div class="box-title">اللغات</div>
-        <ul>
-          <li>العربية
-            <div class="lang-bar"><div class="lang-fill" style="width: 100%;"></div></div>
-          </li>
-          <li>الإنجليزية
-            <div class="lang-bar"><div class="lang-fill" style="width: 70%;"></div></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- المشاريع -->
-    <section id="portfolio" class="right">
-      <div class="section-title">الأعمال والمشاريع</div>
-      <ul>
-        <li>نظام مكتبة إلكترونية باستخدام C#</li>
-        <li>مواقع لمؤسسات تعليمية</li>
-        <li>نظام CMS باستخدام PHP وMySQL</li>
-      </ul>
-    </section>
-
-    <!-- الشهادات -->
-    <section id="certificates" class="right">
-      <div class="section-title">الشهادات والدورات</div>
-      <ul>
-        <li>ICDL - كلية البيان</li>
-        <li>دبلوم جرافيك - أكاديمية الإعلام العربي</li>
-        <li>PMP - مركز رؤية فكر</li>
-        <li>مشاركة في مؤتمر ICOTEN2021</li>
-      </ul>
-    </section>
+ <section class="about" id="about">
+  <div class="about-img">
+    <img src="image/1.png" alt="Profile About" />
+  </div>
+  <div class="about-text">
+    <h2>About <span>Me</span></h2>
+    <h3>Frontend Developer!</h3>
+    <p>
+      Passionate about crafting interactive and beautiful web interfaces.  
+      I love turning ideas into pixel-perfect realities using HTML, CSS, and JavaScript.
+    </p>
 
    
-  </main>
 
-  <!-- التذييل -->
-  <footer id="contact">
-    <p>Email: yasmeen@example.com | 📞 770193410</p>
-    <p>العنوان: تعز - المدينة، الجبل القديم</p>
-    <p>© جميع الحقوق محفوظة - ياسمين القاضي 2025</p>
-  </footer>
+    <!-- قائمة نقاط -->
+    <ul class="about-details">
+      <li>Expert in HTML5, CSS3, and modern JavaScript (ES6+)</li>
+      <li>Experienced with React, Vue.js, and Angular frameworks</li>
+      <li>Skilled in UI/UX design principles and tools like Figma and Adobe XD</li>
+     
+    </ul>
 
-  <!-- زر الرجوع للأعلى -->
-  <a href="#top" class="scroll-top-btn">↑</a>
+    <button>Read More</button>
+  </div>
+</section>
+
+
+<section class="services" id="Services">
+  <h2>Our <span>Services</span></h2>
+  <div class="service-boxes">
+
+    <div class="box">
+      <i class="fa-solid fa-code"></i>
+      <div class="box-content">
+        <h3>Web Development</h3>
+        <p>
+          We build fast, scalable, and responsive websites tailored to your business needs.
+        </p>
+      </div>
+      <button>Read More</button>
+    </div>
+
+    <div class="box">
+      <i class="fa-solid fa-paint-brush"></i>
+      <div class="box-content">
+        <h3>Graphic Design</h3>
+        <p>
+          From logos to full branding packages, our creative designers craft visuals that captivate your audience.
+        </p>
+      </div>
+      <button>Read More</button>
+    </div>
+
+    <div class="box">
+      <i class="fa-solid fa-bullhorn"></i>
+      <div class="box-content">
+        <h3>Digital Marketing</h3>
+        <p>
+          Boost your online visibility with our comprehensive marketing strategies including SEO, social media.
+        </p>
+      </div>
+      <button>Read More</button>
+    </div>
+
+    <div class="box">
+      <i class="fa-solid fa-mobile-screen-button"></i>
+      <div class="box-content">
+        <h3>Mobile App Development</h3>
+        <p>
+          We design and develop intuitive mobile applications for iOS and Android platforms.
+        </p>
+      </div>
+      <button>Read More</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+ <section class="projects" id="Projects">
+  <h2>Latest <span>Project</span></h2>
+ 
+  <div class="project-gallery">
+    <a href="https://example.com/project1" class="project-item" target="_blank">
+      <img src="image/2.webp" alt="Project 1" />
+      <p>Project 1</p>
+    </a>
+    <a href="https://example.com/project2" class="project-item" target="_blank">
+      <img src="image/8.webp" alt="Project 2" />
+      <p>Project 2</p>
+    </a>
+    <a href="https://example.com/project3" class="project-item" target="_blank">
+      <img src="image/3.webp" alt="Project 3" />
+      <p>Project 3</p>
+    </a>
+    <a href="https://example.com/project4" class="project-item" target="_blank">
+      <img src="image/5.webp" alt="Project 4" />
+      <p>Project 4</p>
+    </a>
+    <a href="https://example.com/project5" class="project-item" target="_blank">
+      <img src="image/6.webp" alt="Project 5" />
+      <p>Project 5</p>
+    </a>
+    <a href="https://example.com/project6" class="project-item" target="_blank">
+      <img src="image/7.webp" alt="Project 6" />
+      <p>Project 6</p>
+    </a>
+  </div>
+</section>
+
+
+  <section class="contact"id="Contact">
+    <h2>Contact <span>Me!</span></h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Mobile Number" />
+      <input type="text" placeholder="Email Subject" />
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+  <div class="footer-container">
+    <p>Copyright © 2025 by <strong>Codehall</strong> | All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+<a href="#home" id="backToTop" title="الرجوع للأعلى">↑</a>
+
 </body>
 </html>
