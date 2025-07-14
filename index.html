@@ -13,22 +13,29 @@
 <body>
   <header id="home">
     
-
-  <nav >
+<nav>
   <div class="logo">Yasmeen Ali</div>
 
-  <!-- زر الهامبرجر كـ label يتحكم في checkbox -->
-  <input type="checkbox" id="menu-toggle" />
+  <!-- زر الهامبرجر -->
+  <input type="checkbox" id="menu-toggle" hidden />
   <label for="menu-toggle" class="menu-icon">☰</label>
 
+  <!-- قائمة الروابط -->
   <ul class="nav-list">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#Services">Services</a></li>
     <li><a href="#Projects">Projects</a></li>
     <li><a href="#Contact">Contact</a></li>
+
+    <!-- زر تغيير الثيم داخل القائمة -->
+    <li class="theme-toggle-item">
+      <input type="checkbox" id="themeToggle" hidden />
+      <label for="themeToggle" class="theme-switch" title="Toggle Theme"></label>
+    </li>
   </ul>
 </nav>
+
 
 
   <section class="hero centered" >
